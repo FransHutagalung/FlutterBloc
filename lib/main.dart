@@ -1,4 +1,5 @@
 import 'package:bloc_learn/MyHomePage.dart';
+import 'package:bloc_learn/bloc/app_bloc_observer.dart';
 import 'package:bloc_learn/bloc/auth_bloc.dart';
 import 'package:bloc_learn/bloc/counter_bloc.dart';
 import 'package:bloc_learn/bloc/todo_bloc.dart';
@@ -10,6 +11,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 
 void main() {
+  Bloc.observer = AppBlocObserver();
   runApp(const MyApp());
 }
 
